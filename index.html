@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Suno Song Download FREE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="space-y-6" onSubmit="event.preventDefault(); downloadFile();">
+            <div class="form-group">
+                <h1 for="shareLink" >Download Suno Song</h1>
+                <label for="shareLink" class="form-text">Enter the share link of the song you want to download.</label>
+                <input type="text" class="form-control"  id="shareLink"
+                    placeholder="https://app.suno.ai/song/b27fd-efb85c84...">
+                
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="id" placeholder="b27fd-efb85c84...">
+                
+            </div>
+            <div class="form-group">
+                <select class="form-control" id="format">
+                    <option value="mp3">MP3</option>
+                    <option value="mp4">MP4</option>
+                </select>
+               
+            </div>
+            <button type="submit" class="btn btn-primary">Download</button>
+        </form>
+    </div>
+    <!-- Footer部分 -->
+    <div class="footer">
+        <div class="space-y-1">
+            <h4 class="text-lg font-medium leading-none">How to download Suno song？</h4>
+            <div class="text-md text-muted-foreground">
+                <p>1、Copy share link into the input</p>
+                <p>2、Select wav or mp3 or mp4 format</p>
+                <p>3、Click Download</p>
+            </div>
+            <div class="flex h-5 items-center space-x-4 text-sm">
+                <a href="https://suno.ai/">Suno</a>
+                <span class="separator-vertical"></span>
+                <a href="/">SunoDownloader</a>
+                <span class="separator-vertical"></span>
+                <a href="https://www.udio.com">Udio</a>
+                <span class="separator-vertical"></span>
+                <a href="./udio">UdioDownloader</a>
+                <span class="separator-vertical"></span>
+                <a href="https://myholy-1256190486.cos.ap-beijing.myqcloud.com/20180307/vx.jpg">联系我</a><span
+                    class="separator-vertical"></span>
+                <a href="https://myholy-1256190486.cos.ap-beijing.myqcloud.com/20180307/vx.jpg">广告位招商</a>
+            </div>
+        </div>
+
+    </div>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            /* 水平居中 */
+            align-items: center;
+            /* 垂直居中 */
+            min-height: 100vh;
+            /* 使表单垂直居中于视口，视口高度 */
+        }
+
+        .form-content {
+            width: 100%;
+            /* 确保内容填满容器 */
+            max-width: 600px;
+            /* 或您希望的最大宽度 */
+            padding: 20px;
+            text-align: left;
+            /* 确保文本内容左对齐 */
+        }
+        .form-text{
+            font-size: 1rem;
+        }
+        .text-md{
+            font-size: 1rem;
+        }
+        .text-lg{
+            font-size: 2rem;
+        }
+
+
+
+        .form-control {
+            display: block;
+            width: 100%;
+            /* 使input元素填满其父容器的宽度 */
+            max-width: 500px;
+            /* 设置一个最大宽度以防元素过宽 */
+            margin: 20px auto;
+            /* 水平居中 */
+            padding: 0.375rem 0.75rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        /* 单独为small标签和按钮调整，如果它们不在.form-content内 */
+        h1{
+            font-size: 3.5rem;
+            display: block;
+            /* 使它们成为块级元素 */
+            text-align: center;
+            /* 文本居中，对于small标签很有用 */
+            width: 100%;
+            /* 拉伸填满父容器 */
+            margin: 10px 0;
+            /* 添加一些上下外边距 */
+        }
+        .form-text,
+        .btn {
+            display: block;
+            /* 使它们成为块级元素 */
+            text-align: center;
+            /* 文本居中，对于small标签很有用 */
+            width: 100%;
+            /* 拉伸填满父容器 */
+            margin: 10px 0;
+            /* 添加一些上下外边距 */
+        }
+
+        /* 如果按钮未使用.btn类或需要额外调整 */
+        button,
+        .btn {
+            width: auto;
+            /* 或根据需要设置具体宽度 */
+            margin: 10px auto;
+            /* 水平居中 */
+            padding: 0.375rem 0.75rem;
+            /* 根据需要调整填充 */
+        }
+
+        .btn-primary {
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 0.375rem 0.75rem;
+            font-size: 1.5rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+                border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            /* 使内部内容水平居中 */
+            align-items: start;
+            /* 顶部对齐，如果您想要所有内容都垂直居中，可以改为center */
+            text-align: left;
+            /* 保持文本左对齐 */
+            background-color: #f8f9fa;
+            color: #6c757d;
+            padding: 2rem 0;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .footer .container {
+            max-width: 960px;
+            /* 或您希望的最大宽度 */
+        }
+
+        @media (max-width: 768px) {
+            .footer {
+                padding: 1rem;
+                flex-direction: column;
+            }
+
+            .footer .container {
+                width: 100%;
+            }
+        }
+    </style>
+    <script>
+        function downloadFile() {
+            const shareLink = document.getElementById('shareLink').value;
+            const id = document.getElementById('id').value;
+            const format = document.getElementById('format').value;
+
+            fetch('./download', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id, shareLink, format })
+            })
+                .then(response => response.blob())
+                .then(blob => {
+                    const url = window.URL.createObjectURL(blob);
+                    const filename = (id || shareLink.split('/').pop()) + '.' + format;
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = filename;
+                    document.body.appendChild(a);
+                    a.click();
+                    window.URL.revokeObjectURL(url);
+                    document.body.removeChild(a);
+                })
+                .catch(error => {
+                    console.error('Download error:', error);
+                    alert('An error occurred while downloading the file.');
+                });
+        }
+    </script>
+</body>
+
+</html>
