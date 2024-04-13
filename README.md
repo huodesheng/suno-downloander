@@ -1,37 +1,31 @@
 # sunoDownloander
 
 #### 介绍
- suno和udio 下载的小工具。支持mp3和mp4下载
+suno和udio 下载的小工具。支持mp3和mp4下载
+suno 和 udio 是近期比较火的 AI制作音乐的网站。官网虽然提供下载功能，但是要么步骤繁琐，要么无法下载其他人的。
+我只做了这样一个网站。只要有分享链接，就可进行音乐的下载。MP3和MP4都可以。
 
-#### 软件架构
-软件架构说明
+[SunoSong下载，点击体验](https://sunoai.fun/)
 
+[UdioSong下载，点击体验](https://sunoai.fun/udio)
+
+
+![输入图片说明](image2.png)
+
+![输入图片说明](image.png)
 
 #### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+我的node版本是16+
+编译
+npm install
+启动
+npm index.js
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+访问：http://localhost:3000
 
 
-#### 特技
+也欢迎支持我一下：
+![输入图片说明](70013a14a887360bced7344e5fbb0ba.jpg)
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
